@@ -5,7 +5,7 @@
 This program allows you to sort any social media playlists based on the features of the posts and exports the final category lists into a file in a CSV-like format with a tab separator (\t). 
 
 ## Coming soon 
-- have the ability to automate making collections by itself using Puppeteer.
+- have the ability to automate making collections on your profile by itself using Puppeteer.
 - be a chrome extension for ease of use
 - take in custom prompts for different categorisation rules
 - and more
