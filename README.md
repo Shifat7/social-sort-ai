@@ -1,15 +1,25 @@
-# YouTube Playlist Sorter by Video Duration
-This command-line program allows you to sort YouTube playlists based on the duration of the videos and exports the final sorted list into a file in a CSV-like format with a tab separator (\t). 
 
 
-## Prerequisites
+
+## Social Playlist Sorter by LLM Semantic Inference
+This program allows you to sort any social media playlists based on the features of the posts and exports the final category lists into a file in a CSV-like format with a tab separator (\t). 
+
+## Coming soon 
+- have the ability to automate making collections by itself using Puppeteer.
+- be a chrome extension for ease of use
+- take in custom prompts for different categorisation rules
+- and more
+
+Right now it supports YouTube out of the box but feel free to contribute by making a PR and pinging me for review.
+
+### YouTube Prerequisites
 Before running the program, ensure that you have the following installed and set up:
 1. **Python**: Ensure that Python is installed on your system. You can download it from [python.org](https://www.python.org/downloads/).
 2. **YouTube API Key**: You will need a YouTube Data API key to fetch the playlist details [How to Get YouTube Data API Key](https://www.youtube.com/watch?v=bk4X_D7gF8U).
 
 
-## Setup Instructions
-### Step 1: Get Your Playlist Link
+#### Setup Instructions
+##### Step 1: Get Your Playlist Link
 To get the link to the playlist:
 - Navigate to the YouTube playlist you want to sort.
 - The link should look like: `https://www.youtube.com/playlist?list=YOUR_PLAYLIST_ID`.
@@ -18,21 +28,21 @@ To get the link to the playlist:
   - Click on "Shuffle".
   - Add any video to the queue and then save the queue as a playlist.
 
-### Step 2: Create .env File
+##### Step 2: Create .env File
 - Once you have the key, create a `.env` file inside the same folder as `main.py`.
 - Add your API key to the `.env` file in the format:
 ```
 YOUTUBE_API_KEY="your_api_key"
 ```
 
-### Step 3: Install Dependencies
+##### Step 3: Install Dependencies
 
 To install the required dependencies, open a terminal/command prompt and navigate to the project folder. Then, run the following command:
 ```
 pip install -r requirements.txt
 ```
 
-### Step 4: Run the Script
+##### Step 4: Run the Script
 Once everything is set up, run the script with the following command:
 ```
 python main.py [playlist_link]
@@ -40,7 +50,7 @@ python main.py [playlist_link]
 Replace [playlist_link] with the actual URL of your YouTube playlist (obtained in Step 2).
 
 
-### Step 5: Review the Output
+##### Step 5: Review the Output
 After the script finishes executing, a new file called YoutubePlaylistSortedByDuration.txt will be generated in the same directory. This file will contain the following information for each video:
   - Video Title
   - Video Link
@@ -49,7 +59,7 @@ After the script finishes executing, a new file called YoutubePlaylistSortedByDu
 The list of videos will be sorted from **shortest to longest duration**.
 
 
-### Step 6: Import the File to a Spreadsheet
+##### Step 6: Import the File to a Spreadsheet
 You can easily import the generated file into applications like **Google Sheets** or **Excel**. When importing, make sure to specify the tab (\t) as the separator, as the data is formatted with tab-separated values.
 
 Example Output Format:
