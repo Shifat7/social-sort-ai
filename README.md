@@ -1,6 +1,3 @@
-
-
-
 ## Social Playlist Sorter by LLM Semantic Inference
 This program allows you to sort any social media playlists based on the features of the posts and exports the final category lists into a file in a CSV-like format with a tab separator (\t). 
 
@@ -10,7 +7,7 @@ This program allows you to sort any social media playlists based on the features
 - take in custom prompts for different categorisation rules
 - and more
 
-Right now it supports YouTube out of the box but feel free to contribute by making a PR and pinging me for review.
+Right now it supports YouTube out of the box but feel free to contribute to add more social media platforms by making a PR and pinging me for review.
 
 ### YouTube Prerequisites
 Before running the program, ensure that you have the following installed and set up:
